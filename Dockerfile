@@ -1,5 +1,4 @@
-FROM node:12-alpine
-
+FROM --platform linux/arm/v7 node
 ARG CACHE_SERVER_VERSION=6.4.0
 
 LABEL org.label-schema.version=${CACHE_SERVER_VERSION}
